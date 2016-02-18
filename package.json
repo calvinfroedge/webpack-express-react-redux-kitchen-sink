@@ -50,7 +50,7 @@
     "babel-cli": "6.4.0",
     "isomorphic-fetch": "2.2.1",
     "rc-animate": "2.0.3",
-    "react": "0.14.3",
+    "react": "0.14.7",
     "react-addons-css-transition-group": "0.14.7",
     "react-bootstrap": "0.28.3",
     "react-bs-notifier": "0.4.1",
