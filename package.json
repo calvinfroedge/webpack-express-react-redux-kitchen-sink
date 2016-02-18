@@ -28,22 +28,17 @@
   "babel": {
     "presets": [
       "es2015",
-      "stage-0"
+      "stage-0",
+      "react"
     ],
     "plugins": [
-      "react-transform"
-    ]
-  },
-  "jest": {
-    "scriptPreprocessor": "./node_modules/babel-jest",
-    "testFileExtensions": [
-      "es6",
-      "js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "es6"
+      ["react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]
     ]
   },
   "dependencies": {
