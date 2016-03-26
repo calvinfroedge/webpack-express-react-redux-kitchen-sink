@@ -32,13 +32,22 @@
       "react"
     ],
     "plugins": [
-      ["react-transform", {
-        "transforms": [{
-          "transform": "react-transform-hmr",
-          "imports": ["react"],
-          "locals": ["module"]
-        }]
-      }]
+      [
+        "react-transform",
+        {
+          "transforms": [
+            {
+              "transform": "react-transform-hmr",
+              "imports": [
+                "react"
+              ],
+              "locals": [
+                "module"
+              ]
+            }
+          ]
+        }
+      ]
     ]
   },
   "dependencies": {
@@ -61,6 +70,7 @@
     "react-router-redux": "3.0.0",
     "react-tooltip": "1.1.2",
     "redux": "3.3.1",
+    "redux-actions": "^0.9.1",
     "redux-devtools": "3.1.1",
     "redux-devtools-dock-monitor": "1.0.1",
     "redux-devtools-log-monitor": "1.0.4",

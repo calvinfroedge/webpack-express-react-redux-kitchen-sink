@@ -15,17 +15,12 @@ import { syncHistory, routeReducer } from 'react-router-redux';
 
 //Reducers
 import * as reducers from './reducers/index';
-import NetworkReducer from './modules/rpcwrapper/reducer';
-import AlertsReducer from './modules/alerts/reducer';
-import {createAlert} from './modules/alerts';
 
 //Set up Redux Middleware
 const historyMiddleware = syncHistory(browserHistory)
 const reducer = combineReducers({
   ...reducers,
-  network: NetworkReducer,
-  routing: routeReducer,
-  alerts: AlertsReducer
+  routing: routeReducer
 })
 
 //Set up Dev Tools
